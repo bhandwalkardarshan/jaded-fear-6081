@@ -5,90 +5,663 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luminary</title>
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <style>
-        body{
-            padding: 0;
-            margin: 0;
-            box-sizing: none;
-        }
-        nav>div{
-            background-color: black;
-        }
-        nav{
-            height: 1%;
-            background-color: white;
-            font-size: 18px;
-            color: black;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-        nav img{
-            height: 70px;
-        }
-        nav li{
-            list-style-type: none;
-        }
-        nav input{
-            padding: 5px;
-            border-radius: 5px;
-            border: 1px solid rgb(210, 209, 209);
-            background-color: rgb(236, 235, 235);
-            
-        }
-        nav li a{
-            text-decoration: none;
-            color: black;
-        }
-        .material-symbols-outlined{
-            font-size: medium;
-        }
-
-    </style>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+    <link rel="stylesheet" href="../styles/index.css">
 </head>
 <body>
-    <nav>
-        <li>
-            <img src="../images/logo2.jpg" alt="">
-        </li>
-        <li>
-            <a href="#">Women</a>
-        </li>
-        <li>
-            <a href="#">Men</a>
-        </li>
-        <li>
-            <a href="#">Kids</a>
-        </li>
-        <li>
-            <a href="#">Home</a>
-        </li>
-        <li>
-            <a href="#">Tech</a>
-        </li>
-        <li>
-            <input type="text" placeholder="Search for products, styles and brands">
-        </li>
-        <li>
-            <a href="#"><span class="material-symbols-outlined">
-                account_circle
-                </span> Account</a>
-        </li>
-        <li>
-            <a href="#">
-                <span class="material-symbols-outlined">
-                shopping_bag
-                </span> Cart</a>
-        </li>
-        <li>
-            <a href="#">
-                <span class="material-symbols-outlined">
-                    admin_panel_settings
-                    </span> Admin</a>
-        </li>
-    </nav>
-    
+    <div class="header-top">
+        <div>
+            <h6><span class="material-symbols-outlined md-7">
+                help
+                </span> Help Center</h6>
+        </div>
+        <div>
+            <h6><span class="material-symbols-outlined md-7">
+                smartphone
+                </span> App Download</h6>
+        </div>
+    </div>
+    <!-- header section -->
+     <header class="header">
+        <div class="container">
+          <div class="row v-center">
+            <div class="header-item item-left">
+              <div class="logo">
+                <img src="../images/logo2.jpg" alt="">
+              </div>
+            </div>
+            <div class="header-item item-center">
+              <nav class="menu">
+                <ul class="menu-main">
+                  <li class="menu-item-has-children">
+                    <a href="#">WOMEN</a>
+  
+                    <div class="sub-menu mega-menu mega-menu-column-4">
+                      <div class="list-item">
+                        <h4 class="title">Ethnic Wear</h4>
+  
+                        <ul>
+                          <li><a href="#">Kurta Kurtis</a></li>
+                          <li><a href="#">Sarees</a></li>
+                          <li><a href="#">Ethnic sets</a></li>
+                          <li><a href="#">Suits & Dress Materials</a></li>
+                          <li><a href="#">Lehengas</a></li>
+                          <li><a href="#">Blouses</a></li>
+                          <li><a href="#">Duppattas</a></li>
+                          <li><a href="#">Ethnic Dresses</a></li>
+                          <li><a href="#">Palazoos & Skirts</a></li>
+                          <li><a href="#">Leggings Salwar & Churidaar</a></li>
+                          <li><a href="#">Shawls & Wraps</a></li>
+                          <li><a href="#">Ethnic Shrugs & Jackets</a></li>
+                          <li><a href="#">Cloaks & Abaya</a></li>
+                        </ul>
+                        <h4 class="title">Bags & Wallets</h4>
+                      </div>
+                      <div class="list-item">
+                        <h4 class="title">Western Wear</h4>
+  
+                        <ul>
+                          <li><a href="#">Tops</a></li>
+                          <li><a href="#">Dresses</a></li>
+                          <li><a href="#">Tees</a></li>
+                          <li><a href="#">Shirts</a></li>
+                          <li><a href="#">Tunics</a></li>
+                          <li><a href="#">Jumpsuits</a></li>
+                          <li><a href="#">Sets</a></li>
+                          <li><a href="#">Kaftaans</a></li>
+                          <li><a href="#">Jeans & Jeggings</a></li>
+                          <li><a href="#">Trousers & Pants</a></li>
+                          <li><a href="#">Skirts & Shorts</a></li>
+                          <li><a href="#">Shrugs</a></li>
+                          <li><a href="#">Sweaters & Sweatshirts</a></li>
+                          <li><a href="#">Jackets & Blazers</a></li>
+                        </ul>
+                      </div>
+                      <div class="list-item">
+                        <h4 class="title">Sport & Activewear</h4>
+                        <ul>
+                          <li><a href="#">Swim Wear</a></li>
+                          <li><a href="#">Topwear</a></li>
+                          <li><a href="#">Bottomwear</a></li>
+                          <li><a href="#">Shoes</a></li>
+                        </ul>
+  
+                        <h4 class="title">Lingerie & SleepWear</h4>
+  
+                        <ul>
+                          <li><a href="#">Bra</a></li>
+                          <li><a href="#">Panties</a></li>
+                          <li><a href="#">Lingerie Sets</a></li>
+                          <li><a href="#">Sleepwear & Loungewear</a></li>
+                          <li><a href="#">Shape Wear</a></li>
+                          <li><a href="#">Camisoles & Thermals</a></li>
+                        </ul>
+  
+                        <h4 class="title">Belts & Watches</h4>
+  
+                        <h4 class="title">Sunglasses & Hats</h4>
+                      </div>
+                      <div class="list-item">
+                        <h4 class="title">Jewellery</h4>
+  
+                        <ul>
+                          <li><a href="#">Fashion Jewellery</a></li>
+                          <li><a href="#">Imitation Jewellery</a></li>
+                          <li><a href="#">Earrings</a></li>
+                          <li><a href="#">Necklace & Pendants</a></li>
+                          <li><a href="#">Rings, Bangles & Bracelets</a></li>
+                        </ul>
+  
+                        <h4 class="title">Footwear</h4>
+  
+                        <ul>
+                          <li><a href="#">Flats</a></li>
+                          <li><a href="#">Heels</a></li>
+                          <li><a href="#">Casual Shoes</a></li>
+                          <li><a href="#">Flip Flops</a></li>
+                          <li><a href="#">Sport Shoes & Sneakers</a></li>
+                          <li><a href="#">Boots</a></li>
+                        </ul>
+  
+                        <h4 class="title">PersonalCare</h4>
+                      </div>
+  
+                      <div class="list-item">
+                        <h4 class="title">Brands</h4>
+  
+                        <ul>
+                            <li><a href="#">Shaily</a></li>
+                          <li><a href="#">Cottinfab</a></li>
+                          <li><a href="#">Ksut</a></li>
+                          <li><a href="#">Oxolloxo</a></li>
+                          <li><a href="#">Trendif</a></li>
+                          <li><a href="#">Pluss</a></li>
+                          <li><a href="#">W</a></li>
+                          <li><a href="#">Karigari</a></li>
+                          <li><a href="#">Aurelia</a></li>
+                          <li><a href="#">Alcis</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="menu-item-has-children">
+                    <a href="#">MEN</a>
+                    <div class="sub-menu mega-menu mega-menu-column-4">
+                      <div class="list-item">
+                        <h4 class="title">Top Wear</h4>
+  
+                        <ul>
+                          <li><a href="#">T-Shirts</a></li>
+                          <li><a href="#">Casual Shirts</a></li>
+                          <li><a href="#">Formal Shirts</a></li>
+                          <li><a href="#">Polo T-Shirts</a></li>
+                          <li><a href="#">Suits & Blazzers</a></li>
+                          <li><a href="#">Jackets</a></li>
+                          <li><a href="#">Sweaters and Sweatshirts</a></li>
+                        </ul>
+  
+                        <h4 class="title">Bottomwear</h4>
+  
+                        <ul>
+                          <li><a href="#">Jeans</a></li>
+                          <li><a href="#">Casual Trousers</a></li>
+                          <li><a href="#">Formal Trousers</a></li>
+                          <li><a href="#">Joggers</a></li>
+                          <li><a href="#">Shorts</a></li>
+                        </ul>
+                      </div>
+  
+                      <div class="list-item">
+                        <h4 class="title">Ethnic Wear</h4>
+  
+                        <ul>
+                          <li><a href="#">Kurtas</a></li>
+                          <li><a href="#">Etnic wear Sets</a></li>
+                          <li><a href="#">Nehru Jackets</a></li>
+                          <li><a href="#">Ethnic Bottom Wear</a></li>
+                        </ul>
+                        <h4 class="title">Sports Wear</h4>
+  
+                        <ul>
+                          <li><a href="#">T-Shirts</a></li>
+                          <li><a href="#">Shorts</a></li>
+                          <li><a href="#">Track pants</a></li>
+                          <li><a href="#">Track Suits</a></li>
+                        </ul>
+  
+                        <h4 class="title">Fragrances</h4>
+                      </div>
+  
+                      <div class="list-item">
+                        <h4 class="title">FootWear</h4>
+  
+                        <ul>
+                          <li><a href="#">Casual Shoes</a></li>
+                          <li><a href="#">Formal shoes</a></li>
+                          <li><a href="#">Sports Shoes</a></li>
+                          <li><a href="#">Jutis And Mojaris</a></li>
+                          <li><a href="#">Slippers & Sandals</a></li>
+                          <li><a href="#">Socks</a></li>
+                        </ul>
+                        <h4 class="title">Belts, Bags & Wallets</h4>
+                        <h4 class="title">Watches</h4>
+                        <h4 class="title">Sunglasses & Frames</h4>
+                      </div>
+  
+                      <div class="list-item">
+                        <h4 class="title">Accessories</h4>
+  
+                        <ul>
+                          <li><a href="#">Caps and Hats</a></li>
+                          <li><a href="#">Label Pins & Brooch</a></li>
+                          <li><a href="#">Ties & Pocket Squares</a></li>
+                          <li><a href="#">Cufflinks & Bracelets</a></li>
+                          <li><a href="#">Handkerchiefs</a></li>
+                          <li><a href="#">headphones & Speakers</a></li>
+                        </ul>
+                        <h4 class="title">Innerwear</h4>
+  
+                        <ul>
+                          <li><a href="#">Briefs</a></li>
+                          <li><a href="#">Boxers</a></li>
+                          <li><a href="#">Vests</a></li>
+                        </ul>
+  
+                        <h4 class="title">Personal Grooming</h4>
+                      </div>
+  
+                      <div class="list-item">
+                        <h4 class="title">Brands</h4>
+  
+                        <ul>
+                          <li><a href="#">Arrow</a></li>
+                          <li><a href="#">Us Polo Assn</a></li>
+                          <li><a href="#">Aeropostale</a></li>
+                          <li><a href="#">Campus Sutra</a></li>
+                          <li><a href="#">Ruggers</a></li>
+                          <li><a href="#">Canary London </a></li>
+                          <li><a href="#">Hang Up </a></li>
+                          <li><a href="#">Alcis</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="menu-item-has-children">
+                    <a href="#">KIDS</a>
+                    <div class="sub-menu mega-menu mega-menu-column-4">
+                      <div class="list-item">
+                        <h4 class="title">Girls</h4>
+  
+                        <ul>
+                          <li><a href="#">Dresses & Frocks</a></li>
+                          <li><a href="#">Tees & Tops</a></li>
+                          <li><a href="#">Bottom Wear</a></li>
+                          <li><a href="#">Ethnic Wear</a></li>
+                          <li><a href="#">Sweater & Cardigans</a></li>
+                          <li><a href="#">Coats & jackets</a></li>
+                          <li><a href="#">Twin Sets & Jump Suits</a></li>
+                          <li><a href="#">Innerwear & Nightwear</a></li>
+                        </ul>
+                        <h4 class="title">Shop By Age</h4>
+  
+                        <ul>
+                          <li><a href="#">0-2 Years</a></li>
+                          <li><a href="#">2-6 Years</a></li>
+                          <li><a href="#">6-12 Years</a></li>
+                          <li><a href="#">12-16 Years</a></li>
+                        </ul>
+                      </div>
+  
+                      <div class="list-item">
+                        <h4 class="title">Boys</h4>
+  
+                        <ul>
+                          <li><a href="#">T-Shirts</a></li>
+                          <li><a href="#">Shirts</a></li>
+                          <li><a href="#">Bottom Wear</a></li>
+                          <li><a href="#">Ethnic Wear</a></li>
+                          <li><a href="#">Sweater & Cardigans</a></li>
+                          <li><a href="#">Coats & jackets</a></li>
+                          <li><a href="#">Innerwear & Nightwear</a></li>
+                          <li><a href="#">Twin Sets & Dungrees</a></li>
+                        </ul>
+                        <h4 class="title">Shop By Age</h4>
+  
+                        <ul>
+                          <li><a href="#">0-2 Years</a></li>
+                          <li><a href="#">2-6 Years</a></li>
+                          <li><a href="#">6-12 Years</a></li>
+                          <li><a href="#">12-16 Years</a></li>
+                        </ul>
+                      </div>
+  
+                      <div class="list-item">
+                        <h4 class="title">Footwear</h4>
+  
+                        <ul>
+                          <li><a href="#">Sandals & Floaters</a></li>
+                          <li><a href="#">Slippers & Flip Flops</a></li>
+                          <li><a href="#">Casual Shoes</a></li>
+                          <li><a href="#">Sports Shoes</a></li>
+                          <li><a href="#">Formal Shoes</a></li>
+                        </ul>
+                        <h4 class="title">Accessories</h4>
+  
+                        <h4 class="title">Bed & Bath</h4>
+                      </div>
+  
+                      <div class="list-item">
+                        <h4 class="title">Brands</h4>
+  
+                        <ul>
+                          <li><a href="#">Li'l Tomatoes</a></li>
+                          <li><a href="#">NeuVin </a></li>
+                          <li><a href="#">Under Fourteen Only</a></li>
+                          <li><a href="#">Tales & Stories</a></li>
+                          <li><a href="#">Beebay</a></li>
+                          <li><a href="#">Giny & Jony</a></li>
+                          <li><a href="#">Us Polo Assn</a></li>
+                          <li><a href="#">Monte carlo</a></li>
+                          <li><a href="#">Cherokee</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="menu-item-has-children">
+                    <a href="#">HOME</a>
+                    <div class="sub-menu mega-menu mega-menu-column-4">
+                      <div class="list-item">
+                        <h4 class="title">Bed Linen & Furnishing</h4>
+  
+                        <ul>
+                          <li><a href="#">Bed Sheets Sets</a></li>
+                          <li><a href="#">Quilts & Comforters</a></li>
+                          <li><a href="#">Blankets</a></li>
+                          <li><a href="#">Bed Covers</a></li>
+                          <li><a href="#">Pillow Covers</a></li>
+                          <li><a href="#">Curtains</a></li>
+                        </ul>
+                      </div>
+  
+                      <div class="list-item">
+                        <h4 class="title">Bath</h4>
+  
+                        <ul>
+                          <li><a href="#">Towels</a></li>
+                          <li><a href="#">Bath Mats</a></li>
+                          <li><a href="#">Shower Curtains</a></li>
+                        </ul>
+                      </div>
+  
+                      <div class="list-item">
+                        <h4 class="title">Decor</h4>
+  
+                        <h4 class="title">Household Accessories</h4>
+  
+                        <h4 class="title">Kitchen</h4>
+                      </div>
+  
+                      <div class="list-item">
+                        <h4 class="title">Brands</h4>
+  
+                        <ul>
+                          <li><a href="#">Bella Casa</a></li>
+                          <li><a href="#">Cortina</a></li>
+                          <li><a href="#">Bianca</a></li>
+                          <li><a href="#">Jeby</a></li>
+                          <li><a href="#">Saral Home</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="menu-item-has-children">
+                    <a href="#">TECH</a>
+                    <div class="sub-menu mega-menu mega-menu-column-4">
+                      <div class="list-item">
+                        <h4 class="title">Smart Wearables</h4>
+  
+                        <ul>
+                          <li><a href="#">Smart watches</a></li>
+                          <li><a href="#">Activity trackers</a></li>
+                          <li><a href="#">Fitness trackers</a></li>
+                          <li><a href="#">Waterproof watches</a></li>
+                        </ul>
+                      </div>
+  
+                      <div class="list-item">
+                        <h4 class="title">Headphones</h4>
+                        <ul>
+                          <li><a href="#">In ear</a></li>
+                          <li><a href="#">Over the ear</a></li>
+                          <li><a href="#">Bluetooth</a></li>
+                          <li><a href="#">Wireless</a></li>
+                        </ul>
+                      </div>
+  
+                      <div class="list-item">
+                        <h4 class="title">Speakers</h4>
+                        <ul>
+                            <li><a href="#">Portable speakers</a></li>
+                            <li><a href="#">Bluetooth speakers</a></li>
+                        </ul>
+                      </div>
+  
+                      <div class="list-item">
+                        <h4 class="title">Chargers and Cables</h4>
+  
+                        <ul>
+                          <li><a href="#">Wireless charger</a></li>
+                          <li><a href="#">USB cables</a></li>
+                          <li><a href="#">Wired</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header-item item-right">
+             <nav class="menus">
+              <ul class="menus-main">
+                  <li><input type="text" placeholder="Search for products "></li>
+                  <li><a href="#"> <span class="material-symbols-outlined">
+                    shopping_bag
+                    </span> </a></li>
+                  <li class="menu-item-has-children">
+                    <a href="#"><span class="material-symbols-outlined">
+                        account_circle
+                        </span></a>
+                    <div class="sub-menu megas-menu single-column-menu">
+                      <div class="list-item"> 
+                          <h5>WELCOME!</h5>
+                      <h6>To View Account Details</h6>
+                      <button>LOGIN</button>
+        
+                      <ul>
+                        <li><a href="#">ORDERS</a></li>
+                        <li><a href="#">RETURN REPLACEMENT</a></li>
+                      </ul>
+        
+                      <ul>
+                        <li><a href="#">CUSTOMER SUPPORT</a></li>
+                        <li><a href="#">FAQ & HELP</a></li>
+                      </ul>
+        
+                      <ul>
+                        <br />
+                      </ul>
+                      </div>
+                    </div>
+                    <li><a href="#"> <span class="material-symbols-outlined">
+                        admin_panel_settings
+                        </span></a></li>
+             </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+    <!-- slider -->
+    <section class="slider_container">
+        <div class="container">
+          <div class="swiper card_slider">
+            <div class="swiper-wrapper">
+              
+              <div class="swiper-slide">
+                <div class="slider_box">
+                  <img src="https://images-static.nykaa.com/uploads/feedf65a-be0a-46d8-9098-4a543b12566a.jpg?tr=w-1200,cm-pad_resize" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider_box">
+                  <img src="https://images-static.nykaa.com/uploads/d3252a59-e86d-4f04-8d11-57a1eb91154e.jpg?tr=w-1200,cm-pad_resize" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider_box">
+                  <img src="https://images-static.nykaa.com/uploads/05b6fa24-6fcd-49b7-b122-6f46b0f78e60.jpg?tr=w-1200,cm-pad_resize" alt="">
+                  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider_box">
+                  <img src="https://images-static.nykaa.com/uploads/b28ae591-a43b-4ccc-bbff-a4ff26297060.jpg?tr=w-1200,cm-pad_resize" alt="">
+                 
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider_box">
+                  <img src="https://images-static.nykaa.com/uploads/8425e059-c7f9-4d5f-85ea-21013aeff64e.jpg?tr=w-1200,cm-pad_resize" alt="">
+                  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider_box">
+                  <img src="https://images-static.nykaa.com/uploads/8425e059-c7f9-4d5f-85ea-21013aeff64e.jpg?tr=w-1200,cm-pad_resize" alt="">
+                 
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> 
+          </div>
+        </div>
+    </section>
+    <!-- shop by category -->
+    <div class="category">
+        <p>SHOP BY CATEGORY</p>
+        <h3>Handpicked for you</h3>
+        <div>
+            <div>
+                <img src="https://images-static.nykaa.com/uploads/52a77dc7-cd13-4fff-a945-8f44634e7a90.jpg?tr=w-240,cm-pad_resize" alt="">
+                <p>Up to 70% off</p>
+            </div>
+            <div>
+                <img src="https://images-static.nykaa.com/uploads/0c59d8fe-adb1-4fb2-92f6-5c6a7d31b47d.jpg?tr=w-240,cm-pad_resize" alt="">
+                <p>Up to 70% off</p>
+            </div>
+            <div>
+                <img src="https://images-static.nykaa.com/uploads/48dfc682-c8ba-482b-89a5-ad9d5c0eb641.jpg?tr=w-240,cm-pad_resize" alt="">
+                <p>Up to 70% off</p>
+            </div>
+            <div>
+                <img src="https://images-static.nykaa.com/uploads/631fc396-0bf0-4c74-ac10-ec0d5053dcbc.jpg?tr=w-240,cm-pad_resize" alt="">
+                <p>Up to 70% off</p>
+            </div>
+            <div>
+                <img src="https://images-static.nykaa.com/uploads/7fae8dd1-e3c7-4af2-a851-4a17d32f241b.jpg?tr=w-240,cm-pad_resize" alt="">
+                <p>Up to 70% off</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://images-static.nykaa.com/uploads/9a174ef5-8bab-41a5-a2ea-ee5361a2d58d.jpg?tr=w-240,cm-pad_resize" alt="">
+                <p>Up to 70% off</p>
+            </div>
+            <div>
+                <img src="https://images-static.nykaa.com/uploads/b8452330-86f3-4951-ad7d-0a0b2c31d0d9.jpg?tr=w-240,cm-pad_resize" alt="">
+                <p>Up to 70% off</p>
+            </div>
+            <div>
+                <img src="https://images-static.nykaa.com/uploads/6ab77ae0-12a9-48ba-b3dc-6123c048936d.jpg?tr=w-240,cm-pad_resize" alt="">
+                <p>Up to 70% off</p>
+            </div>
+            <div>
+                <img src="https://images-static.nykaa.com/uploads/bc5ba541-69a7-4006-b3ab-cc37d0e3a73f.jpg?tr=w-240,cm-pad_resize" alt="">
+                <p>Up to 70% off</p>
+            </div>
+        </div>
+    </div>
+    <!-- only at luminary -->
+    <h3 style="text-align: center;">Only At Luminary</h3>
+    <div class="brands">
+        
+        <div>
+            <img src="https://images-static.nykaa.com/uploads/d8ba959a-8cdd-423f-81e0-3dabd873dbe2.jpg?tr=w-85.71428571428571,cm-pad_resize" alt="">
+        </div>
+        <div>
+            <img src="https://images-static.nykaa.com/uploads/3a9747bf-b7c9-4507-81da-1b57c7dcc6ee.jpg?tr=w-85.71428571428571,cm-pad_resize" alt="">
+        </div>
+        <div>
+            <img src="https://images-static.nykaa.com/uploads/59c59807-1bf9-4889-9f5b-6cddfab6872b.jpg?tr=w-85.71428571428571,cm-pad_resize" alt="">
+        </div>
+        <div>
+            <img src="https://images-static.nykaa.com/uploads/5703399c-2c21-4bd7-b3c9-7d68720597a9.jpg?tr=w-85.71428571428571,cm-pad_resize" alt="">
+        </div>
+
+        <div>
+            <img src="https://images-static.nykaa.com/uploads/37e50d1a-2cae-4563-822a-4a8e37349dfb.jpg?tr=w-85.71428571428571,cm-pad_resize" alt="">
+        </div>
+        <div>
+            <img src="https://images-static.nykaa.com/uploads/701eab1e-5af1-4076-916f-51300aaa6b43.jpg?tr=w-85.71428571428571,cm-pad_resize" alt="">
+        </div>
+        <div>
+            <img src="https://images-static.nykaa.com/uploads/bd9f2449-9b7f-42b0-b003-600ad1205ffa.png?tr=w-85.71428571428571,cm-pad_resize" alt="">
+        </div>
+        <div>
+            <img src="https://images-static.nykaa.com/uploads/a41d99e2-cf6a-49ec-8d1e-212d4b912e54.jpg?tr=w-85.71428571428571,cm-pad_resize" alt="">
+        </div>
+
+        <div>
+            <img src="https://images-static.nykaa.com/uploads/437367ac-2f23-40eb-a964-96ec1289a042.jpg?tr=w-85.71428571428571,cm-pad_resize" alt="">
+        </div>
+        <div>
+            <img src="https://images-static.nykaa.com/uploads/db75fc99-7159-4bfc-b9ca-e289f504b018.jpg?tr=w-85.71428571428571,cm-pad_resize" alt="">
+        </div>
+        <div>
+            <img src="https://images-static.nykaa.com/uploads/28e31fc0-09f5-49af-8a27-bef1c1247da6.jpg?tr=w-85.71428571428571,cm-pad_resize" alt="">
+        </div>
+        <div>
+            <img src="https://images-static.nykaa.com/uploads/82af00ba-eb55-4bbb-a350-3aba58c464e2.jpg?tr=w-85.71428571428571,cm-pad_resize" alt="">
+        </div>
+    </div>
+    <div class="banner">
+        <img src="https://images-static.nykaa.com/uploads/542701f0-1711-4dab-8238-5ad274a6cd95.gif?tr=w-1200,cm-pad_resize" alt="">
+    </div>
+    <!-- IN THE SPOTLIGHT -->
+    <div class="spot">
+        <p>IN THE SPOTLIGHT</p>
+        <h3>Covetable finds this week</h3>
+    </div>
+    <div class="spotlight">
+        
+            <div>
+                <img src="https://images-static.nykaa.com/uploads/7d269440-ab70-4588-9aa6-d0f68adebbac.jpg?tr=w-400,cm-pad_resize" alt="">
+            </div>
+            <div>
+                <img src="https://images-static.nykaa.com/uploads/44b0e6e7-ace4-4aec-b52e-4656074205f5.jpg?tr=w-400,cm-pad_resize" alt="">
+            </div>
+            <div>
+                <img src="https://images-static.nykaa.com/uploads/9805750c-3967-4584-a7af-cc861f64812c.jpg?tr=w-400,cm-pad_resize" alt="">
+            </div>
+        
+            <div>
+                <img src="https://images-static.nykaa.com/uploads/e2e13115-edee-4743-80fa-cd3aaa3e8efc.jpg?tr=w-400,cm-pad_resize" alt="">
+            </div>
+            <div>
+                <img src="https://images-static.nykaa.com/uploads/0bc8d66d-9ab1-4e6a-ae50-d25310d64467.jpg?tr=w-400,cm-pad_resize" alt="">
+            </div>
+            <div>
+                <img src="https://images-static.nykaa.com/uploads/051894cd-da69-4f63-b67e-c86c4440bc62.jpg?tr=w-400,cm-pad_resize" alt="">
+            </div>
+        
+    </div>
 </body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+    // <!-- Initialize Swiper -->
+
+  var swiper = new Swiper(".card_slider", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: true,
+    speed: 1000,
+    autoplay: {
+      delay: 2000,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+    //   480: {
+    //     slidesPerView: 1,
+    //   },
+    //   768: {
+    //     slidesPerView: 2,
+    //   },
+    //   1200: {
+    //     slidesPerView: 3,
+    //   },
+    },
+  });
+
+</script>
