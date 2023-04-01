@@ -336,18 +336,90 @@ body {
     margin-top: 20px;
   }
 
-  @media (min-width: 0px) and (max-width: 600px) {
+  .trend{
+    text-align: center;
+    margin-top: 20px;
+  }
+  .trending{
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* slider2 */
+  .slider_box2{
+    display: flex;
+  }
+  .slider_box2 img {
+    max-width: 70%;
+}
+.slider_box2 h4{
+    -webkit-transform: rotate(-90deg); 
+    -moz-transform: rotate(-90deg);    
+    transform:rotate(-90deg);
+    margin: auto;
+    font-size: large;
+}
+.slider_container2 .container2 {
+  padding: 0 15px;
+  max-width: 1000px;
+}
+.slider_box2 img{
+  width: 100%;
+}
+.slider_container2 .container2{
+  margin: 20px 0; 
+  padding:  0 15px;
+  max-width: 100%;
+}
+
+/* style files css */
+.files{
+    text-align:center;
+    padding: 1%;
+  }
+  .files>div{
+    display: flex;
+    width: 100%;
+    padding: 1%;
+  }
+  .files > div > div > img{
+    width:100%;
+  }
+
+  .house{
+    text-align: center;
+    padding: 1%;
+    background-color: rgb(250,236,253);
+  }
+
+  .hous{
+    margin: 1%;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(250,236,253);
+  }
+
+  @media (min-width: 100px) and (max-width: 600px) {
     .spotlight{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         gap: 20px;
       }
+      .files>div{
+        display: inline-block;
+      }
   }
 
-  @media (min-width:601) and (max-width:768){
+  @media (min-width: 601px) and (max-width: 768px) {
     .spotlight{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         gap: 20px;
+      }
+      .files>div{
+        display: flex;
+        flex-wrap: wrap;
       }
   }
